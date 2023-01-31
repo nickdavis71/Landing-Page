@@ -8,8 +8,8 @@ body {
 }
 
 .header-img {
-    width: 100%;
-    min-width:300px;
+    
+    max-width: 500px;
     height: auto;
 }
 
@@ -43,8 +43,9 @@ a {
     font-size: 18px;
 }
 
-.content{
+.content {
     display: flex;
+    justify-content: center;
     padding: 50px 0px;
     gap: 50px;
 }
@@ -53,11 +54,6 @@ a {
   display: flex;
   flex-direction: column;
 }
-
-.right-content {
-    flex: 1 1 auto;
-}
-
 
 .main-text {
     font-size: 48px;
@@ -71,8 +67,10 @@ a {
 }
 
 button {
-    width: 100px;
-    height: 30px;
+    min-width: 100px;
+    min-height: 30px;
+    max-width: 100px;
+    min-height: 30px;
     background-color: #3882F6;
     color: #F9FAF8;
     font-weight: bold;
@@ -84,7 +82,7 @@ button {
 .box-2 {
     display: flex;
     flex-direction: column;
-    padding: 10px 100px;
+    margin: 0px 150px 50px 150px;
 }
 
 .title {
@@ -105,20 +103,91 @@ button {
 
 .thumbnail {
     display: flex;
-    height: 100px;
-    width: 100px;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
     object-fit: fill ;
     border: 4px solid #3882F6;
     border-radius: 8px;
 }
 
 .info-image {
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
+    max-width: 200px;
+    padding: 50px;
     text-align: center;
 }
 
 .info-image .secondary-text {
     color: grey;
+}
+
+.box-3 {
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E7EB;
+    padding: 50px 200px;
+}
+
+.quote-text {
+    font-style: italic;
+    font-size: 36px;
+    color: #1F2937;
+}
+
+.author-text {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 24px;
+    color: #1F2937;
+    font-weight: bold;
+}
+
+.box-4 {
+    margin: 50px 100px;
+}
+
+.action-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3882F6;
+    border-radius: 8px;
+    padding: 50px 100px;
+    gap: 100px;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.action-text {
+    color: #F9FAF8;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.action-box .secondary-text {
+    color: #F9FAF8;
+    font-size: 18px;
+}
+
+.action-box button {
+    min-width: 100px;
+    min-height: 30px;
+    background-color: #3882F6;
+    color: #F9FAF8;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 2px solid #F9FAF8;
+    margin-top: 10px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #1F2937;
+    padding: 25px 100px;
 }
