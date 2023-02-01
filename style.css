@@ -7,15 +7,26 @@ body {
     flex-direction: column;
 }
 
+.empty-box {
+    flex: 1;
+}
+
 .header-img {
-    
-    max-width: 500px;
+    max-width: 400px;
     height: auto;
 }
 
 .box-1 {
+    display: flex;
     background-color: #1F2937;
     padding: 10px 100px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    max-width: 950px;
+    flex: 0 1 auto;
 }
 
 .header {
@@ -29,12 +40,11 @@ body {
     font-size: 24px;
 }
 
-
 .links {
     display: flex;
     list-style-type: none;
     margin: 0;
-    gap: 20px;
+    gap: 50px;
 }
 
 a {
@@ -47,7 +57,7 @@ a {
     display: flex;
     justify-content: center;
     padding: 50px 0px;
-    gap: 50px;
+    gap: 100px;
 }
 
 .left-content {
@@ -81,16 +91,22 @@ button {
 
 .box-2 {
     display: flex;
+    padding: 50px;
+}
+
+.pictures {
+    display: flex;
     flex-direction: column;
-    margin: 0px 150px 50px 150px;
+    flex: 0 1 auto;
+    max-width: 950px;
 }
 
 .title {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px;
 }
+
 .info-text {
     font-size: 36px;
     font-weight: 700;
@@ -123,9 +139,15 @@ button {
 
 .box-3 {
     display: flex;
-    flex-direction: column;
     background-color: #E5E7EB;
-    padding: 50px 200px;
+    padding: 50px;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    max-width: 950px;
 }
 
 .quote-text {
@@ -143,7 +165,8 @@ button {
 }
 
 .box-4 {
-    margin: 50px 100px;
+    display: flex;
+    margin: 50px;
 }
 
 .action-box {
@@ -154,6 +177,8 @@ button {
     border-radius: 8px;
     padding: 50px 100px;
     gap: 100px;
+    min-width: 750px;
+    flex: 0 1 auto;
 }
 
 .actions {
